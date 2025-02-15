@@ -46,12 +46,12 @@ jobs:
       # Build Docker Image
       - name: Build Docker Image
         if: runner.os == 'Linux'  # Run only on Ubuntu
-        run: docker build -t ireneengg2011/javawithgradle:latest .
+        run: docker build -t melda17/gradle2:latest .
 
       # Push Docker Image to Docker Hub
       - name: Push Docker Image to Docker Hub
         if: runner.os == 'Linux'  # Run only on Ubuntu
-        run: docker push ireneengg2011/javawithgradle:latest
+        run: docker push melda17/gradle2:latest
 
   dependency-submission:
     runs-on: ubuntu-latest
